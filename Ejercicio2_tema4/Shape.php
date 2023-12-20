@@ -9,7 +9,8 @@ class Shape{
         $this->ancho = $ancho;
         $this->alto = $alto;
     }
-//public function calcularArea();
+public function calcularArea(){  
+}
 
 }
 
