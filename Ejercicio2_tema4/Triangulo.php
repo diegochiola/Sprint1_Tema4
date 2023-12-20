@@ -2,7 +2,7 @@
 // Incluye la clase shape
 require_once('Shape.php');
 
-class Rectangulo extends Shape{
+class Triangulo extends Shape{
 
 //metodo Constructor
 public function __construct(int $ancho, int $alto){
