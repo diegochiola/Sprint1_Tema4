@@ -9,7 +9,7 @@ public static $totalTiradas;
 //genera un valor aleatorio para el objeto al que se le aplica el método.
 public function throw(){
     $caraRand= array_rand ($this->carasDado);
-    $this-> caraSeleccionada = $this-> caraDado[$caraRand];
+    $this->caraSeleccionada = $this->carasDado[$caraRand];
     self::$totalTiradas++;
 }
 public function shapeName(){
