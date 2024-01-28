@@ -29,6 +29,21 @@ switch($opcion){
     default:
         echo "Opcion no valida, vuelva a intentarlo";           
 }
+//defino un array vacio para que vayan ingresando las tiradas
+$dados_array=[];
+$cantDados = 5;
 
+for ($i = 0; $i<$cantDados; $i++){
+    $dado = new PokerDice();
+    $dado->throw();
+    $dados_array[]= $dado;
+}
 
+//para que me muestre el contenido del array $dados_array
+foreach ($dados_array as $i => $dado){
+    echo "El dado $i salio: " . $dado->shapeName(). "\n";
+}
+
+//por ultimo mostrar la cantidad de tiradas:
+$totalDeTiradas = PokerDice::getTotalTiradas(). "\n";
 ?>
