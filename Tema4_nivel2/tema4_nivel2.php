@@ -11,11 +11,11 @@ $dado5 = new PokerDice();*/
 
 //menu de aplicacion
 do{
-    $opcion = readline("Bienvenido a la aplicacion PokerDice. \n".
-                    "Seleccione la opcion deseada: \n".
-                    "1. Lanzar un dado.\n".
-                    "2. Lanzar 5 dados. \n".
-                    "0. Salir de la aplicacion. \n");
+    $opcion = readline("Bienvenido a la aplicacion PokerDice.". "\n".
+                    "Seleccione la opcion deseada: ". "\n".
+                    "1. Lanzar 1 dado.". "\n".
+                    "2. Lanzar 5 dados.". "\n".
+                    "0. Salir de la aplicacion.". "\n");
 
 switch($opcion){
     case 1: 
@@ -39,14 +39,14 @@ switch($opcion){
         }
         break;
     case 0:
-        echo "Ha decidido salir del programa"."</br>";
+        echo "Ha decidido salir del programa". "\n";
         break;
     default:
-        echo "Opcion no valida, vuelva a intentarlo";           
+        echo "Opcion no valida, vuelva a intentarlo". "\n";           
 }
 }while ($opcion!=0);
 
 //por ultimo mostrar la cantidad de tiradas:
 $totalDeTiradas = PokerDice::getTotalTiradas(). "\n";
-
+echo "El total de tiradas de dados fue: $totalDeTiradas veces. ". "\n";
 ?>
